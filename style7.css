@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* THE RIGHT-INDENTED CODE IS ALSO WORKING(than is the flex-dir. & wrap DISABLED  */
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+                  /* flex-direction: column; */
+}
+
+.boxez {
+    /* border: 2px dotted; */
+    height: 200px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.box1 {
+    background-color: rgb(100, 19, 110);
+}
+
+.box2 {
+    background-color: rgb(161, 37, 124);
+}
+.box3 {
+    background-color: blue;
+}
+.box4 {
+    background-color: green;
+}
+.box5 {
+    background-color: yellow;
+}
+.box6 {
+    background-color: rgb(255, 94, 0);
+}
+.box7 {
+    background-color: rgb(240, 22, 22);
+}
+
+/* @media only screen and (min-width: 0px) and (max-width: 600px) {
+    .boxez {
+        width: 100%;
+    }
+} */
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+
+                /* .box-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                } */
+
+    .box1, .box2, .box6, .box7  {
+        width: 100%;
+    }
+    .box3, .box4, .box5 {
+        width: 33.33%;
+        /* display: flex;
+        flex-direction: row; */
+    }
+}
+
+@media only screen and (min-width: 801px) {
+
+                /* .box-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                } */
+    .box1, .box2, .box6, .box7  {
+        width: 50%;
+    }
+    
+    .box3, .box4, .box5 {
+        width: 33.33%;
+        /* display: flex;
+        flex-direction: row; */
+    }
+}
